@@ -1,0 +1,58 @@
+
+<html>
+      <head>
+        <title>Reconocimiento de imagen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=X_mWfaukU4nR0mCJBCJQqajYokdUMiFEbS6nCpBjOBo0l5YhltwBIqAehOAO9SPduZBiNmqy8x8gvnU5QG37ntfB1GSB-z6aZs3ImzG376M" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hbWRhdmFsb3MuZ2l0aHViLmlvL0FEVi1yZWNvbm9jaW1pZW50by1pbWFnZW4v"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+       <link rel="stylesheet" href="style.css">
+      
+      </head>
+    
+      <body>
+      <div class="container">
+        
+        <center>
+          <h3 class="btn btn-default heading">RECONOCIMIENTO DE IMAGEN</h3>
+          <br><br>
+    
+          <p style="font-size: 22px;">Este modelo está entrenado para identificar los siguientes objetos: </p>
+    
+          <b class="name_of_objects">
+            Resistol
+            <hr>
+            Cuchara
+            <hr>
+            Teléfono
+            <hr>
+            Botella de agua
+            <hr>
+          </b>
+    
+          <label>Cámara web - </label>
+          <div id="camera"></div>
+          <br><br>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="take_snapshot();" class="btn btn-info">Capturar imagen</button>
+          <br><br>
+          <button onclick="check();" class="btn btn-success">Identificar imagen</button>
+          <br><br>
+    
+          <p style="font-size: 22px;">Objeto : <span id="result_object_name"></span> </p>
+          <p style="font-size: 22px;">Precisión : <span id="result_object_accuracy"></span> </p>
+        </center>
+    
+      </div>
+    <script src="main.js"></script>
+    
+      </body>
+    </html>
+    
+     
+    
